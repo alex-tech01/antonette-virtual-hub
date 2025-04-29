@@ -32,7 +32,7 @@
     </nav>
 </header>
 
-<section id="about">
+<section id="about" in:fade>
     <h2>About Me</h2>
     <p>
         Hello! I'm Antonette, a dedicated Virtual Assistant passionate about
@@ -43,9 +43,10 @@
     </p>
 </section>
 
-<section id="services">
+<section id="services" in:fade>
     <h2>Services Offered</h2>
     <ul>
+        <li>💻 Software Development</li>
         <li>📧 Email Management & Inbox Organization</li>
         <li>📅 Calendar Management & Scheduling</li>
         <li>📞 Client Communication (Email, Chat, Phone)</li>
@@ -68,7 +69,7 @@
     </ul>
 </section>
 
-<section id="contact">
+<section id="contact" in:fade>
     <h2>Ready to Work Together?</h2>
     <p>Fill out the form below and let's connect!</p>
 
@@ -92,14 +93,6 @@
 <footer>© 2025 Antonette Virtual Hub</footer>
 
 <style>
-    /* Same styles from before, plus a little extra for the form */
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background: #f9f9f9;
-    }
-
     header {
         background: url("https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80")
             no-repeat center center/cover;
@@ -116,11 +109,27 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: rgba(0, 0, 0, 0.5); /* Dark transparent overlay */
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    header h1 {
+        margin: 0;
+        font-size: 3rem;
+        position: relative;
+        z-index: 1;
+    }
+
+    header p {
+        margin-top: 1rem;
+        font-size: 1.2rem;
+        position: relative;
+        z-index: 1;
     }
 
     nav {
         margin-top: 2rem;
+        position: relative;
+        z-index: 1;
     }
 
     nav a,
@@ -183,17 +192,7 @@
     }
 
     button {
-        background-color: #4a90e2;
-        color: white;
-        padding: 0.8rem 1.5rem;
-        border: none;
-        border-radius: 6px;
-        font-size: 1rem;
         cursor: pointer;
-    }
-
-    button:hover {
-        background-color: #357abd;
     }
 
     .success {

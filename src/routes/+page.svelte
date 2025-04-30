@@ -26,7 +26,9 @@
     <h1>Antonette Virtual Hub</h1>
     <p>Your trusted partner in professional virtual assistant services.</p>
     <nav>
-        <a href="#about">About Me</a>
+        <a href="/">Home</a>
+        <a href="/portfolio">Portfolio</a>
+        <a href="#about">About</a>
         <a href="#services">Services</a>
         <a href="#contact">Contact</a>
     </nav>
@@ -73,18 +75,18 @@
     <h2>Ready to Work Together?</h2>
     <p>Fill out the form below and let's connect!</p>
 
-    <form on:submit|preventDefault={handleSubmit}>
-        <input type="text" placeholder="Your Name" bind:value={name} />
-        <input type="email" placeholder="Your Email" bind:value={email} />
-        <textarea placeholder="Your Message" rows="5" bind:value={message}
+    <form
+        action="https://formspree.io/f/mnndjodd"
+        method="POST"
+        on:submit={() => (formSubmitted = true)}
+    >
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" rows="5" required
         ></textarea>
         <button type="submit">Send Message</button>
 
-        {#if error}
-            <div class="error">{error}</div>
-        {/if}
-
-        {#if formSubmitted && !error}
+        {#if formSubmitted}
             <div class="success">Thank you! Your message has been sent.</div>
         {/if}
     </form>

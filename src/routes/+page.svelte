@@ -26,10 +26,9 @@
     <h1>Antonette Virtual Hub</h1>
     <p>Your trusted partner in professional virtual assistant services.</p>
     <nav>
-        <a href="/">Home</a>
-        <a href="/portfolio">Portfolio</a>
-        <a href="#about">About</a>
+        <a href="#about">About Me</a>
         <a href="#services">Services</a>
+        <a href="/testimonials">Testimonials</a>
         <a href="#contact">Contact</a>
     </nav>
 </header>

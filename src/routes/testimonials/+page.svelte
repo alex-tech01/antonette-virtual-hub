@@ -14,6 +14,10 @@
             name: "Maria G., E-commerce Owner",
             text: "Responsive, friendly, and detail-oriented. My inbox has never been this peaceful!",
         },
+        {
+            name: "Angie Newton - HerGrandLife.com & GetASocialBoost.com",
+            text: "Antonette has been such a blessing to work with! She rewrites PLR content for my blog, creates guides, handles research, does spreadsheets, and even puts together YouTube videos from photos.\n\nGreat communication, especially with us being in different parts of the world. She’s always responsive and reliable. And she’s dependable, proactive, and talented too.\n\nWhat I appreciate most is how she seems to know what I need before I even ask. She takes on new tasks without hesitation. She’s quick to learn new things and always makes my workload lighter and my business run smoother.\n\nHiring Antonette was a total game-changer! I highly recommend working with her! She’s truly an asset to my team!",
+        },
     ];
 </script>
 
